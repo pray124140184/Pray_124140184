@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pendaftaran Asisten Praktikum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="logoitera.jpg" alt="Logo ITERA">
+        </div>
+
+        <nav>
+            <a href="index.html">Pendaftaran</a>
+            <a href="detail.html">Data Pendaftar</a>
+        </nav>
+
+    </header>
+
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <div class="form-card">
+
+            <h1>Pendaftaran Asisten Praktikum</h1>
+
+            <p class="description">
+                Silakan lengkapi data pendaftaran dengan benar.
+            </p>
+
+            <h2>Formulir Pendaftaran</h2>
+
+
+            <form action="detail.html" method="get">
+
+                <!-- NAMA -->
+                <label for="nama">
+                    Nama Lengkap:
+                </label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    name="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+
+
+                <!-- NIM -->
+                <label for="nim">
+                    NIM:
+                </label>
+
+                <input
+                    type="text"
+                    id="nim"
+                    name="nim"
+                    placeholder="Contoh: 124140001"
+                    required
+                >
+
+
+                <!-- PROGRAM STUDI -->
+                <label for="prodi">
+                    Program Studi:
+                </label>
+
+                <select
+                    id="prodi"
+                    name="prodi"
+                    required
+                >
+
+                    <option value="">
+                        -- Pilih Program Studi --
+                    </option>
+
+                    <option value="Rekayasa Instrumentasi dan Automasi">
+                        Rekayasa Instrumentasi dan Automasi
+                    </option>
+
+                    <option value="Rekayasa Kehutanan">
+                        Rekayasa Kehutanan
+                    </option>
+
+                    <option value="Rekayasa Keolahragaan">
+                        Rekayasa Keolahragaan
+                    </option>
+
+                    <option value="Rekayasa Kosmetik">
+                        Rekayasa Kosmetik
+                    </option>
+
+                    <option value="Rekayasa Minyak dan Gas">
+                        Rekayasa Minyak dan Gas
+                    </option>
+
+                    <option value="Teknik Biomedis">
+                        Teknik Biomedis
+                    </option>
+
+                    <option value="Teknik Biosistem">
+                        Teknik Biosistem
+                    </option>
+
+                    <option value="Teknik Elektro">
+                        Teknik Elektro
+                    </option>
+
+                    <option value="Teknik Fisika">
+                        Teknik Fisika
+                    </option>
+
+                    <option value="Teknik Geofisika">
+                        Teknik Geofisika
+                    </option>
+
+                    <option value="Teknik Geologi">
+                        Teknik Geologi
+                    </option>
+
+                    <option value="Teknik Industri">
+                        Teknik Industri
+                    </option>
+
+                    <option value="Teknik Informatika">
+                        Teknik Informatika
+                    </option>
+
+                    <option value="Teknik Kimia">
+                        Teknik Kimia
+                    </option>
+
+                    <option value="Teknik Material">
+                        Teknik Material
+                    </option>
+
+                    <option value="Teknik Mesin">
+                        Teknik Mesin
+                    </option>
+
+                    <option value="Teknik Pertambangan">
+                        Teknik Pertambangan
+                    </option>
+
+                    <option value="Teknik Sistem Energi">
+                        Teknik Sistem Energi
+                    </option>
+
+                    <option value="Teknik Telekomunikasi">
+                        Teknik Telekomunikasi
+                    </option>
+
+                    <option value="Teknologi Industri Pertanian">
+                        Teknologi Industri Pertanian
+                    </option>
+
+                    <option value="Teknologi Pangan">
+                        Teknologi Pangan
+                    </option>
+
+                </select>
+
+
+                <!-- SEMESTER -->
+                <label for="semester">
+                    Semester:
+                </label>
+
+                <select
+                    id="semester"
+                    name="semester"
+                    required
+                >
+
+                    <option value="">
+                        -- Pilih Semester --
+                    </option>
+
+                    <option value="Semester 1">Semester 1</option>
+                    <option value="Semester 2">Semester 2</option>
+                    <option value="Semester 3">Semester 3</option>
+                    <option value="Semester 4">Semester 4</option>
+                    <option value="Semester 5">Semester 5</option>
+                    <option value="Semester 6">Semester 6</option>
+                    <option value="Semester 7">Semester 7</option>
+                    <option value="Semester 8">Semester 8</option>
+
+                </select>
+
+
+                <!-- PILIHAN ASPRAK -->
+                <label>
+                    Pilihan Asisten Praktikum:
+                </label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="praktikum"
+                            value="Asprak Fisika"
+                            required
+                        >
+                        Asprak Fisika
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="praktikum"
+                            value="Asprak Kimia"
+                        >
+                        Asprak Kimia
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="praktikum"
+                            value="Asprak Biologi"
+                        >
+                        Asprak Biologi
+                    </label>
+
+                </div>
+
+
+                <!-- HARI -->
+                <label for="hari">
+                    Hari Praktikum:
+                </label>
+
+                <select
+                    id="hari"
+                    name="hari"
+                    required
+                >
+
+                    <option value="">
+                        -- Pilih Hari --
+                    </option>
+
+                    <option value="Senin">Senin</option>
+                    <option value="Selasa">Selasa</option>
+                    <option value="Rabu">Rabu</option>
+                    <option value="Kamis">Kamis</option>
+                    <option value="Jumat">Jumat</option>
+
+                </select>
+
+
+                <!-- JAM -->
+                <label for="jam">
+                    Jam Praktikum:
+                </label>
+
+                <select
+                    id="jam"
+                    name="jam"
+                    required
+                >
+
+                    <option value="">
+                        -- Pilih Jam --
+                    </option>
+
+                    <option value="07.30 - 09.10">
+                        07.30 - 09.10
+                    </option>
+
+                    <option value="09.10 - 10.50">
+                        09.10 - 10.50
+                    </option>
+
+                    <option value="10.50 - 12.30">
+                        10.50 - 12.30
+                    </option>
+
+                    <option value="12.30 - 14.10">
+                        12.30 - 14.10
+                    </option>
+
+                    <option value="14.10 - 15.50">
+                        14.10 - 15.50
+                    </option>
+
+                    <option value="15.50 - 17.30">
+                        15.50 - 17.30
+                    </option>
+
+                </select>
+
+
+                <!-- NILAI -->
+                <label for="nilai">
+                    Nilai Mata Kuliah:
+                </label>
+
+                <select
+                    id="nilai"
+                    name="nilai"
+                    required
+                >
+
+                    <option value="">
+                        -- Pilih Nilai --
+                    </option>
+
+                    <option value="A">A</option>
+                    <option value="AB">AB</option>
+                    <option value="B">B</option>
+                    <option value="BC">BC</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+
+                </select>
+
+
+                <!-- BUTTON -->
+                <div class="button-group">
+
+                    <button type="submit">
+                        Daftar Sebagai Asisten
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset-button"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Pengembangan Aplikasi Web - Tugas Individu 3
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

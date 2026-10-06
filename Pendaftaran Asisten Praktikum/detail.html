@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Data Pendaftar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img
+                src="logoitera.jpg"
+                alt="Logo ITERA"
+            >
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Pendaftaran
+            </a>
+
+            <a href="detail.html">
+                Data Pendaftar
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- KONTEN UTAMA -->
+
+    <main>
+
+        <div class="detail-card">
+
+            <h1>
+                Data Pendaftar
+            </h1>
+
+
+            <p class="description">
+
+                Berikut adalah informasi
+                pendaftaran asisten praktikum.
+
+            </p>
+
+
+            <table>
+
+                <tr>
+
+                    <th>
+                        Data
+                    </th>
+
+                    <th>
+                        Informasi
+                    </th>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Nama Lengkap
+                    </td>
+
+                    <td id="nama">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        NIM
+                    </td>
+
+                    <td id="nim">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Program Studi
+                    </td>
+
+                    <td id="prodi">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Semester
+                    </td>
+
+                    <td id="semester">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Asisten Praktikum
+                    </td>
+
+                    <td id="praktikum">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Hari Praktikum
+                    </td>
+
+                    <td id="hari">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Jam Praktikum
+                    </td>
+
+                    <td id="jam">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Nilai Mata Kuliah
+                    </td>
+
+                    <td id="nilai">
+                        -
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+            <a
+                href="index.html"
+                class="back-button"
+            >
+                Kembali ke Pendaftaran
+            </a>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Pengembangan Aplikasi Web - Tugas Individu 3
+        </p>
+
+    </footer>
+
+
+
+    <!-- QUERY STRING -->
+
+    <script>
+
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
+
+
+        document.getElementById("nama").textContent =
+            params.get("nama") || "-";
+
+
+        document.getElementById("nim").textContent =
+            params.get("nim") || "-";
+
+
+        document.getElementById("prodi").textContent =
+            params.get("prodi") || "-";
+
+
+        document.getElementById("semester").textContent =
+            params.get("semester") || "-";
+
+
+        document.getElementById("praktikum").textContent =
+            params.get("praktikum") || "-";
+
+
+        document.getElementById("hari").textContent =
+            params.get("hari") || "-";
+
+
+        document.getElementById("jam").textContent =
+            params.get("jam") || "-";
+
+
+        document.getElementById("nilai").textContent =
+            params.get("nilai") || "-";
+
+    </script>
+
+
+</body>
+
+</html>
